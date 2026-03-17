@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Moderno Responsivo</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        
+        <nav class="navbar">
+            
+            <a href="index.html" class="logo">INMOBILIARIA VIVARE</a>
+            
+            <ul class="nav-menu">
+                
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="Servicio.html" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="Portafolio.html" class="nav-link">Portafolio</a></li>
+                <li class="nav-item"><a href="Contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="Quienes somos.html" class="nav-link">Quienes somos</a></li>
+                <li class="nav-item"><a href="Login.html" class="nav-link">Login</a></li>
+            
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        
+        </nav>
+    
+    </header>
+    
+<!--==Bloque nuevo:formulario de login y registro==-->
+<main class="auth-container">
+    <div class="auth-forms">
+        <!--Tabs para alternar entre login y registro-->
+        <div class="auth-tabs"
+        <button class="auth-tab active" id="login-tab">Iniciar Sesion</button>
+        <button class="auth-tab" id="Register-tab">Registrarse</button>
+    </div>
+
+    <!--    formulario login-->
+        <form id="login-form" class="auth-forms">
+            <h2>Accede a tu cuenta</h2>
+            <div class="form-group">
+                <label for="Login-email">Correo Electronico</label>
+                <input type="email" id="login-email" placeholder="tucorreo@ejemplo.com" required>
+            </div>
+           <div class="form-group">
+            <label for="login-password">Contraseña</label>
+            <input type="password" id="login-password" placeholder="Minimo 6 caracteres" required>
+           </div>
+           <button type="submit" class="auth-submit">Entrar</button>
+           <p id="login-message" class="auth-forms"></p>
+        </form>
+
+        <!--Formulario de registro-->
+        <form id="Register-form" class="auth-forms">
+            <h2>Crea una nueva cuenta</h2>
+        <div class="form-group">
+            <label for="register-,name">Nombre Completo</label>
+            <input type="text" id="register-name" placeholder="Juan Perez" required>
+        </div>
+
+        <div class="form-group">
+            <label for="register-email">Correo Electronico</label>
+            <input type="email" id="register-email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="register-password">Contraseña</label>
+            <input type="password" id="register-password" placeholder="Minimo 6 caracteres" required>
+        </div>
+
+        <div class="form-group">
+            <label for="register-confirm"> Confirmar Contraseña</label>
+            <input type="password" id="register-confirm" placeholder="Repite tu contraseña" required>
+        </div>
+
+        <button type="submit" class="auth-submit">Registrarse</button>
+        <p id="register-message" class="auth-message"></p>
+        </form>  
+    </div>
+</main>
+<!--FIN BLOQUE NUEVO-->
+
